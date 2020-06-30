@@ -3,15 +3,9 @@ body{
     margin: 0%;
 }
 
-.upper{
-    background-image: url(../images/top-banner.png);
-    background-repeat: no-repeat;
-}
-
-.dream-area{
-    background-image: url(../images/dream-bg.png);
-    background-repeat: no-repeat;
-    background-position: right;
+section{
+    height: 500px;
+    padding-bottom: 50px;
 }
 
 h1{
@@ -24,6 +18,28 @@ h2{
 
 p{
     color: dimgray;
+}
+
+footer{
+    text-align: center;
+    font-size: 15px;
+}
+
+.upper{
+    background-image: url(../images/top-banner.png);
+    background-repeat: no-repeat;
+}
+
+.dream-area{
+    background-image: url(../images/dream-bg.png);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.experience-area{
+    background-image: url(../images/exp-bg.png);
+    background-repeat: no-repeat;
+    background-position: left;
 }
 
 .golden-highlight{
@@ -42,11 +58,6 @@ p{
     padding-top: 5%;
 }
 
-section{
-    height: 500px;
-    padding-bottom: 50px;
-}
-
 .link-button{
     text-decoration: none;
     background-image: linear-gradient(45deg, #f78567, #fb6756);
@@ -62,7 +73,7 @@ section{
 }
 
 .box{
-    height: 300px;
+    height: 80%;
     box-shadow: 5px 5px 20px gray;
     border-radius: 5px;
     background-color: #fff;
@@ -75,12 +86,7 @@ section{
 .experience-justify{
     text-align: justify;
     padding-right: 20px;
-}
-
-.experience-area{
-    background-image: url(../images/exp-bg.png);
-    background-repeat: no-repeat;
-    background-position: left;
+    padding-bottom: 5%;
 }
 
 #full-stack{
@@ -100,17 +106,106 @@ section{
     margin-left: 50px;
 }
 
-footer{
-    text-align: center;
-    font-size: 15px;
+@media all and (max-width: 375px){
+    body{
+        margin: 0%;
+    }
+    section{
+        height: 700px;
+        position: static;
+        margin-bottom: 10%;
+        margin-top: -8%;
+        padding-bottom: 0%;
+    }
+    .half-width{
+        float: none;
+        margin-bottom: 40px;
+        width: 90%;
+    }
+    .upper{
+        height: auto;
+    }
+    .dream-area{
+    }
+    .experience-area{
+        height: auto;
+    }
+    footer{
+    }
+    #profile-1{
+        margin-left: 25%;
+    }
+    #profile-2{
+        margin-left: -8%;
+    }
+    .inverse-1{
+        position: relative;
+        top: 60%;
+    }
+    .inverse-2{
+        position: relative;
+        top: -36%;
+    }
+    .half-width img{
+        width: 75%;
+        padding-top: 5%;
+    }
+    .box{
+        height: 80%;
+    }
+    #exp{
+        margin-left: 5%;
+    }
 }
 
-@media all and (max-width: 768px){
+@media all and (min-width: 375px) and (max-width: 425px){
+    body{
+        margin: 0%;
+    }
+    section{
+        height: 700px;
+        position: static;
+        margin-bottom: 10%;
+        margin-top: -8%;
+        padding-bottom: 0%;
+    }
     .half-width{
-        width: 80%;
+        float: none;
+        margin-bottom: 40px;
+        width: 90%;
+    }
+    .upper{
         height: auto;
-        margin-left: 8%;
-        margin-bottom: 5%;
-        padding-left: 10%;
+    }
+    .dream-area{
+    }
+    .experience-area{
+        height: auto;
+    }
+    footer{
+    }
+    #profile-1{
+        margin-left: 25%;
+    }
+    #profile-2{
+        margin-left: -8%;
+    }
+    .inverse-1{
+        position: relative;
+        top: 47%;
+    }
+    .inverse-2{
+        position: relative;
+        top: -47%;
+    }
+    .half-width img{
+        width: 75%;
+        padding-top: 5%;
+    }
+    .box{
+        height: 80%;
+    }
+    #exp{
+        margin-left: 5%;
     }
 }
