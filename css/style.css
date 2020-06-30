@@ -95,3 +95,13 @@ footer{
     text-align: center;
     font-size: 15px;
 }
+
+@media all and (max-width: 768px){
+    .half-width{
+        width: 80%;
+        height: auto;
+        margin-left: 8%;
+        margin-bottom: 5%;
+        padding-left: 10%;
+    }
+}
